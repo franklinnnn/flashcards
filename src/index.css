@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=PT+Sans&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Oxygen", "PT Sans",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #030027;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.topics-list,
+.quizzes-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topic,
+.quiz {
+  width: 200px;
+  height: 200px;
+  background-color: #58648C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.topic:hover{
+  background-color: #2E438C;
+  box-shadow: 2px 2px 8px 2px rgba(255, 255, 255, 0.18);
+}
+.quiz:hover{
+  background-color: #2E438C;
+}
+
+h1 {
+  color: #fff;
+}
+
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topic-container img {
+  margin: 10px;
+  width: 60px;
+}
+.topic-container .text-content,h2{
+  color: #fff;
+}
+
+.quizzes-list a {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.quizzes-list a:not(:last-child) {
+  margin-bottom: 20px;
+}
+.quizzes-list li {
+  color: #fff;
+}
+
+.card {
+  width: 500px;
+  height: 250px;
+  background-color: #58648C;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.button {
+  background-color: #2E438C;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #C16E70;
+}
+.remove-card-button {
+  background-color: #151E3F;
+  color: #2E438C;
+  padding: 5px;
+  border-radius: 4px;
+}
+.remove-card-button:hover {
+  background-color: #58648C;
+}
